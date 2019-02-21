@@ -15,3 +15,5 @@ Route::get('/multiplicar/{n1}/{n2}', 'MeuControlador@multiplicar');
 Route::get('/nomes/{id}', 'MeuControlador@getNomeByID');
 
 Route::resource('/cliente','ClienteControlador');
+
+Route::post('/cliente/requisitar', 'ClienteControlador@requisitar');
